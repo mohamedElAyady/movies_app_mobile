@@ -35,7 +35,7 @@ public class HomeAdapter extends RecyclerView.Adapter<MyViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),Activite_2.class);
+                Intent intent = new Intent(view.getContext(),Movie_Activity.class);
                 view.getContext().startActivity(intent);
             }
         });
