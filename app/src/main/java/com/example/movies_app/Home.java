@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
 
-    RecyclerView recyclerView;
     ArrayList<String> arrayList = new ArrayList<String>();
 
     SearchView searchView;
@@ -24,7 +23,7 @@ public class Home extends AppCompatActivity {
 
 
         arrayList.add("movie1");
-        arrayList.add("movie2");
+        arrayList.add("suiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
         arrayList.add("movie3");
         arrayList.add("movie4");
         arrayList.add("movie5");

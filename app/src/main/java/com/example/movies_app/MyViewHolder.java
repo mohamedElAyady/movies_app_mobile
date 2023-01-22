@@ -14,7 +14,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
 
         label = itemView.findViewById(R.id.label);
-        type = itemView.findViewById(R.id.movieType);
+        type = itemView.findViewById(R.id.label);
 
     }
 }
