@@ -1,31 +1,24 @@
 package com.example.movies_app;
 
-
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
-
-public class HomeAdapter extends RecyclerView.Adapter<MyViewHolder> {
+public class SeriesAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     Context context;
     ArrayList<Movie> movies = new ArrayList<Movie>();
 
-    public HomeAdapter(Context context, ArrayList<Movie> movies) {
+    public SeriesAdapter(Context context, ArrayList<Movie> movies) {
         this.context = context;
         this.movies = movies;
     }
@@ -33,7 +26,7 @@ public class HomeAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.item,parent,false));
+        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.serie_item,parent,false));
     }
 
     @Override
@@ -56,4 +49,5 @@ public class HomeAdapter extends RecyclerView.Adapter<MyViewHolder> {
     public int getItemCount() {
         return movies.size();
     }
+
 }
